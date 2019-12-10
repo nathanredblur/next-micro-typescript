@@ -1,7 +1,7 @@
 {
   "main": "server.js",
   "scripts": {
-    "dev": "micro-dev --watch server.js",
+    "dev": "micro-dev ./index.js --ignore ./.next --silent --cold",
     "build": "next build",
     "start": "cross-env NODE_ENV=production micro"
   },
@@ -9,11 +9,15 @@
     "cross-env": "^5.2.0",
     "micro": "^9.3.3",
     "micro-route": "^2.5.0",
-    "next": "latest",
+    "next": "9.1.5",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
-    "micro-dev": "^3.0.0"
+    "@types/node": "^11.13.9",
+    "@types/react": "^16.8.15",
+    "micro-dev": "^3.0.0",
+    "ts-node": "^8.5.4",
+    "typescript": "3.5.2"
   }
 }
